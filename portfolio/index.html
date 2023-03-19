@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/germainLogo.jpg">
+    <link rel="stylesheet" href="style.css ">
+    <script src="https://kit.fontawesome.com/9e32feefc3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id ="header"> 
+    <div class="container">
+        <nav>
+            <img src="images/germainLogo.jpg" class="logo" onclick="window.open(this.src)">
+            <ul id ="sideMenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-rectangle-xmark" onclick="closeMenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>   
+        </nav>
+
+        <div class="intro">
+            <div class="Text">
+                <h1 ><b>Web Developer</b></h1><br>
+                <h2>Hello, I'm <span style="color: rgb(7, 1, 17);">Germain </span>Adediha, </h2>
+            <h2> I'm a Junior Web Developer. </h2>
+               
+            </div>  
+            <div class="photo">
+                <img class ="imagePhoto" src="images/germain-koffi.png" alt="Germain's photo">
+            </div>
+
+        </div>
+       <!----------
+        <div class="header-text">
+                <p>Web Developer </p>
+                <h1>Hello, I'm <span> Germain </span> Adediha,
+                I'm a Junior Web Developer.
+                </h1>
+                <div class="Myphoto">
+                    <img class =" imagePhoto" src="images/germain-koffi.png" alt="Germain's photo">
+            </div> 
+        </div>
+    -------------->
+ 
+       
+    </div>
+
+    <!----------
+    <div class="container">
+        <div class="header-text">
+            <p>Web Developer </p>
+            <h1>Hello, I'm <span> Germain </span> Adediha,
+            I'm a Junior Web Developer.
+            </h1>
+        </div>
+        <div class="Myphoto">
+            <img class =" imagePhoto" src="images/germain-koffi.png" alt="Germain's photo">
+        </div> 
+    </div>
+--->
+
+</div> 
+
+<!------------------------------------About-------------------------------->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/gerkoff.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="text-about-me" style="font-family:'Times New Roman', Times, serif; font-size: 25px; text-indent: 20px;"> 
+                    <br>As a recent graduate with a degree in computer science and a focus on web development, 
+                    I am eager to begin my career as a junior web developer. <br>
+                    During my studies, I gained a solid understanding of programming languages such as Java, JavaScript, 
+                    Python, C++ and web development frameworks such as React, FastAPI, and I am excited to apply these 
+                    skills to real-world projects. 
+                    I have completed several personal projects that have allowed me to develop my skills in HTML, CSS, 
+                    JavaScript, and responsive design.
+                    I am eager to bring my skills, enthusiasm, and passion for web 
+                    development to a dynamic and innovative team.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experiences</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span style="color:rgb(13, 2, 25)"><b>Responsive Design</b></span><br> I create responsive website using <b>HTML,CSS and JavaScript</b>.</li>
+                     <li><span style="color:rgb(13, 2, 25)"><b>VCS : Git & github</b></span><br> I use GIT as 
+                            <span style="color:white; font-family: italic"> Version Control Systems.</span></li>
+                        <li><span style="color:rgb(13, 2, 25) "><b>UX/UI Design</b></span><br> I'm interested in user experience and learning 
+                        to create visually appealing and easy-to-use web applications that meet the needs of clients and end-users. </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <!---<li><span>2023 - Current</span><br> Intership at <span>Diplomist24</span></li>  --->
+                        <li><span><b>June 2022 - August 2022</b></span><br> Internship-Practice at <a href="https://9221233.ru/" target="_blank" class="work-links"> OOO - Trend-BLB</a> <br> 
+                            Development of a clone of the company's website.</li>
+                        <li><span> <b>February 2022 - May 2022</b></span><br>Course work - Brawl Skills <br>API development in the <a href ="https://github.com/brawl-skills" target="_blank" class ="work-links">Brawls-Skills web project</a>.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span><b>2019 - 2023 </b></span><br>Bachelor in Computer Science and Computer Engineering<br>
+                            <span style ="font-family: italic; color:white">Moscow Technical University of Communications and Informatics(MTUCI), Moscow</li></span>  
+                        <li><span><b>2018 - 2019 </b></span><br> Preparatory Faculty<br>Moscow Power Engineering Institute(MEI), Moscow </li>
+                        <!----<li><span><b>2014 - 2017 </b></span><br>  </li>---->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!---------------------------------services----------------------------->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-pencil"></i>  
+                <h2>Web Development</h2>
+                <p>
+                    I create and maintain websites. Designing the layout, writing code, and testing the website to ensure that it works properly.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-check-double"></i>
+                <h2>Quality Assurance</h2>
+                <p>
+                    I offer quality assurance services to clients who needs to test their software or website to ensure that it works properly.
+                    Writing test scripts,running tests.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Database Management</h2>
+                <p>
+                    I offer database management services to clients who need to store, organize and manage large amounts of data. Desining and 
+                    setting up databases,writing queries.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+
+<!------------------portfolio---------------->
+<div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/connect4.png" alt="">
+                    <div class="layer">
+                        <h3>A Connect4 Game App</h3>
+                        <p></p>
+                            <a href="" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/lune.png" alt="">
+                    <div class="layer">
+                        <h3>Web Design using Tilda</h3>
+                        <p>I create website using Tilda, get a look at this site</p>
+                            <a href="http://germain_tilda.tilda.ws/page34617357html" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/roman.png" alt="">
+                    <div class="layer">
+                        <h3>An integer to roman numeral converter</h3>
+                        <p>An app that convert integer to roman numeral.</p>
+                            <a href="https://germain-adediha.github.io/Converter/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Germain-Adediha?tab=repositories" target="_blank" class="btn">See more</a>
+
+        </div>
+</div>
+
+
+<!---------------------------------contact----------------------------->
+
+<div id="contact">
+    <div class="container">
+        
+        <div class="row">
+            <div class="contact-left">
+                <h1 class ='sub-title'>Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> adedihagermain@gmail.com
+                    
+                </p>
+                <p> 
+                    <i class="fa-solid fa-phone"></i> 
+                    <i class="fa-brands fa-whatsapp"></i> 
+                    <i class="fa-brands fa-telegram"></i>
+                     8 964-629-9096 
+                   
+                </p>
+                <div class="social-icons">
+                    <a href="https://vk.com/id530556389" target="_blank"><i class="fa-brands fa-vk"></i></a>
+                    <a href="https://vk.com/id530556389" target="_blank"><i class="fa-brands fa-vk"></i></a>
+                    <a href="https://vk.com/id530556389" target="_blank"><i class="fa-brands fa-vk"></i></a>
+                </div>
+
+                <a href="images/my-cv.pdf" target="_blank" download class="btn btn2">Download CV</a>
+            </div>
+
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="text" name="email" placeholder="Your email" required>
+                    <input type="text" name="phone_number" placeholder="+1 234 567 89">
+                    <textarea name="Message" rows="10" placeholder="Your Message" style="resize: none;"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">Copyright<i class="fa-regular fa-copyright"></i>Germain.</div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName ("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu =document.getElementById("sideMenu");
+    function openMenu(){
+            sidemenu.style.right="0";
+    }
+    function closeMenu(){   
+            sidemenu.style.right="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby5JJghWD\
+    __dIgDk0WUN2JmjrYiJhWSgoUUoDUPSeUGIGFkA_EKNrUxU_dH32x8_63H6Q/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=getElementById('msg')
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function() {
+                msg.innerHTML =""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+ 
+  <script>
+   
+  </script>
+</body>
+</html>
