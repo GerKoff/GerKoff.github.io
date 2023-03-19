@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/9e32feefc3.css" crossorigin="anonymous">    
+    <script src="https://kit.fontawesome.com/9e32feefc3.js" crossorigin="anonymous"></script>
+    <title>assistant-artificiel</title>
+</head>
+<body>
+    <div class="container">
+    <div class="useful-links">
+        <div class="faq-oop-java">
+            <h3>LES BASES</h3>
+            <br><br>
+           <ul>
+
+            <li><a href="https://google.com" target="_blank">OOP</a></li>
+            <li><a href="https://google.com" target="_blank">OOP at apprentissage de java</a>  </li>
+            <li><a href="https://google.com" target="_blank">Un coup d'oeil dans la case de l'oncle Tom</a>  </li>
+            <li><a href="https://google.com" target="_blank">OOP au coeur de la programmation</a>  </li>
+            <li><a href="https://google.com" target="_blank">OOP at apprentissage de java</a>  </li>
+            <li><a href="https://google.com" target="_blank">OOP at apprentissage de java</a>  </li>
+            <li><a href="https://google.com" target="_blank">OOP at apprentissage de java</a>  </li>
+            <li><a href="https://google.com" target="_blank">OOP at apprentissage de java</a>  </li>
+
+
+
+
+           </ul>
+            
+
+               <!-- <a href="https://google.com" target="_blank">OOP</a>
+               <a href="https://google.com" target="_blank">OOP</a>
+               <a href="https://google.com" target="_blank">OOP</a>
+               <a href="https://google.com" target="_blank">OOP</a>
+               <a href="https://google.com" target="_blank">OOP</a>
+               <a href="https://google.com" target="_blank">OOP</a>
+               <a href="https://google.com" target="_blank">OOP</a>
+               <a href="https://google.com" target="_blank">OOP</a>
+               <a href="https://google.com" target="_blank">OOP</a>
+               <a href="https://google.com" target="_blank">OOP</a>
+               <a href="https://google.com" target="_blank">OOP</a> -->
+               
+               
+           
+        </div>
+
+        <div class="compilator">
+            <p>
+                <code>
+                    <pre>
+
+                </pre>
+            </code>
+            </p>
+        </div>
+         
+    </div>  
+
+    <div class="chatbox" title="chatbox">
+      <!------------
+        <div class="chat-header">
+            <h3> chat</h3> 
+        </div>
+        ----->
+        <div class="chat-body">
+            <!------------LES MESSAGES-------->
+            
+        </div>
+        <div class="chat-footer">
+            <input type="text" name="user_question" id="user_question" placeholder="Entrer votre question!" >
+            <button id = "SendQuestion" onclick="SendQuestion()"> <i class="fa-solid fa-paper-plane"></i></button>
+           
+            
+        </div>
+    </div>
+</div>
+
+    <div class="copyright">
+
+        <div class="feedBack">
+            <p>Partie pour recevoir les feedback</p>
+        </div>
+
+        <div class="cp-right"> 
+            <p> copyright Germain 2023</p>
+           
+        </div>
+
+       <div class="university">
+        <p>MTUCI 2023</p>
+       </div>
+        
+    </div>
+   <script>
+   const message = document.getElementsByClassName("chat-body");
+    function SendQuestion(){
+        question = document.getElementById("user_question").value;
+        message += question;
+        return message;
+    }
+   </script>
+</body>
+</html>
